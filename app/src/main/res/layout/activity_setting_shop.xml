@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop.SettingActivityShop"
+    android:background="#FF9800">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_shopsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/shopICON"
+        android:layout_width="107dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/input_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/text_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SHOPNAME"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/shopICON"
+        app:layout_constraintStart_toStartOf="@+id/shopICON"
+        app:layout_constraintTop_toBottomOf="@+id/shopICON" />
+
+    <EditText
+        android:id="@+id/shopset_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/framelayout_bg"
+        android:ems="10"
+        android:hint="current address"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#757575"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_shopname"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/shopset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/framelayout_bg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:hint="current password"
+        android:textColorHint="#757575"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopset_street"
+        app:layout_constraintStart_toStartOf="@+id/shopset_street"
+        app:layout_constraintTop_toBottomOf="@+id/shopset_street"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/shopset_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/framelayout_bg"
+        android:ems="10"
+        android:hint="current contact"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#757575"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopset_password"
+        app:layout_constraintStart_toStartOf="@+id/shopset_password"
+        app:layout_constraintTop_toBottomOf="@+id/shopSetting_showpw"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_shopchangeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Change User Information"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopset_contact" />
+
+    <Button
+        android:id="@+id/btn_setting_setting"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="setting"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shopchangeInfo" />
+
+    <Button
+        android:id="@+id/btn_home_setting"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="70dp"
+        android:text="home"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_setting_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shopchangeInfo" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Street Address:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/shopset_street"
+        app:layout_constraintTop_toBottomOf="@+id/text_shopname" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/shopset_password"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Contact:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/shopset_street"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
+
+    <CheckBox
+        android:id="@+id/shopSetting_showpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        app:layout_constraintEnd_toEndOf="@+id/shopset_password"
+        app:layout_constraintTop_toBottomOf="@+id/shopset_password" />
+
+    <Button
+        android:id="@+id/btn_shoplogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_shopchangeInfo"
+        app:layout_constraintStart_toStartOf="@+id/btn_shopchangeInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shopchangeInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

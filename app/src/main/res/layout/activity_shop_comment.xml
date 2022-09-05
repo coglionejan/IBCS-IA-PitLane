@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".Shop.ShopCommentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/comment_shop_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopCommentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_below="@+id/comment_shop_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/post"
+            android:background="@color/white"
+            android:hint="Add a comment"
+            android:paddingLeft="5dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#616161"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:backgroundTint="#0D47A1"
+            android:text="POST"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        </RelativeLayout>
+</RelativeLayout>

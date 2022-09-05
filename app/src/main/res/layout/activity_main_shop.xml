@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop.MainActivityShop"
+    android:background="#FF9800">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_shopmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner_shopmain"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_shopmain"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <fragment
+        android:id="@+id/shopmainFragment"
+        android:name="android.example.pitlaneuser.Shop.ShopPostFragment"
+        android:layout_width="411dp"
+        android:layout_height="572dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <fragment
+        android:id="@+id/shopmainFragment2"
+        android:name="android.example.pitlaneuser.Shop.ShopPostFragment2"
+        android:layout_width="411dp"
+        android:layout_height="572dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:text="Home"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_shopsetting"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:text="Setting"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

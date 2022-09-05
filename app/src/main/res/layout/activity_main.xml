@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".User.MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_usermain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="376dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/framelayout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_displayUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Username: "
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/main_displayCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Car Model: "
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/framelayout_bg"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout1"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/mainactivity_car" />
+
+        <Button
+            android:id="@+id/btn_gotoRequest"
+            android:layout_width="310dp"
+            android:layout_height="93dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Request Estimates for Repair"
+            app:backgroundTint="#0D47A1" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_home_main"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:text="HOME"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <Button
+        android:id="@+id/btn_history_main"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="History"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_setting_main"
+        app:layout_constraintStart_toEndOf="@+id/btn_home_main"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <Button
+        android:id="@+id/btn_setting_main"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Setting"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

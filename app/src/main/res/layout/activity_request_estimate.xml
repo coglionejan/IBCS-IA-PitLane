@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF9800"
+    tools:context=".User.RequestEstimateActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputRepairType"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/framelayout_bg"
+        android:ems="10"
+        android:hint="Repair Type"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint=" #616161"
+        app:layout_constraintEnd_toEndOf="@+id/carImage"
+        app:layout_constraintStart_toStartOf="@+id/carImage"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choosePic" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputRequirements"
+        android:layout_width="344dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/framelayout_bg"
+        android:ems="10"
+        android:hint="Other Requirements"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint=" #616161"
+        app:layout_constraintEnd_toEndOf="@+id/inputRepairType"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/inputRepairType"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Region" />
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Request"
+        app:backgroundTint="#0D47A1"
+        app:layout_constraintEnd_toEndOf="@+id/inputRequirements"
+        app:layout_constraintStart_toStartOf="@+id/inputRequirements"
+        app:layout_constraintTop_toBottomOf="@+id/inputRequirements" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="126dp"
+        android:layout_height="34dp"
+        android:text="Select Region: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_Region"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_Region"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/inputRepairType"
+        app:layout_constraintTop_toTopOf="@+id/spinner_Region"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner_Region"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select Region"
+        app:layout_constraintEnd_toEndOf="@+id/inputRepairType"
+        app:layout_constraintTop_toBottomOf="@+id/inputRepairType"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titleRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Request Estimates for Your Repair"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="318dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRequest" />
+
+    <Button
+        android:id="@+id/btn_choosePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Choose Image"
+        app:layout_constraintEnd_toEndOf="@+id/carImage"
+        app:layout_constraintStart_toStartOf="@+id/carImage"
+        app:layout_constraintTop_toBottomOf="@+id/carImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

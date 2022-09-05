@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.pitlaneuser">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PitLaneUser">
+        <activity
+            android:name=".User.ShopHistoryCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ViewShopHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ShopInfoIntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.AcceptOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RatingShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Shop.SettingActivityShop"
+            android:exported="true" />
+        <activity
+            android:name=".Shop.ShopCommentActivity"
+            android:exported="true" />
+        <activity android:name=".Shop.LoginActivityShop" />
+        <activity android:name=".Shop.RegisterActivityShop" />
+        <activity android:name=".Shop.MainActivityShop" />
+        <activity
+            android:name=".User.CommentsActivity"
+            android:exported="true" />
+        <activity android:name=".User.MainActivity" />
+        <activity android:name=".User.RegisterActivity" />
+        <activity android:name=".User.UserSettingActivity" />
+        <activity android:name=".User.MyHistoryActivity" />
+        <activity android:name=".User.RequestEstimateActivity" />
+        <activity android:name=".User.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

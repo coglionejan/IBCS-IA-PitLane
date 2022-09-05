@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.ShopInfoIntroActivity"
+    android:background="#FF9800">
+
+
+    <ImageView
+        android:id="@+id/image_shopIntro"
+        android:layout_width="362dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/shopname_intro"
+        android:layout_width="387dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/image_shopIntro"
+        app:layout_constraintStart_toStartOf="@+id/image_shopIntro"
+        app:layout_constraintTop_toBottomOf="@+id/image_shopIntro" />
+
+    <TextView
+        android:id="@+id/shopintro_shopaddress"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:background="@drawable/framelayout_bg"
+        android:text="Address: "
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/store_icon"
+        android:drawablePadding="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopname_intro"
+        app:layout_constraintStart_toStartOf="@+id/shopname_intro"
+        app:layout_constraintTop_toBottomOf="@+id/shopname_intro" />
+
+    <TextView
+        android:id="@+id/shopintro_shopContact"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:text="Contact: "
+        android:background="@drawable/framelayout_bg"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopintro_shopaddress"
+        app:layout_constraintStart_toStartOf="@+id/shopintro_shopaddress"
+        app:layout_constraintTop_toBottomOf="@+id/shopintro_shopaddress" />
+
+    <TextView
+        android:id="@+id/shopintro_shopEmail"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:background="@drawable/framelayout_bg"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Email: "
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopintro_shopContact"
+        app:layout_constraintStart_toStartOf="@+id/shopintro_shopContact"
+        app:layout_constraintTop_toBottomOf="@+id/shopintro_shopContact" />
+
+    <Button
+        android:id="@+id/shopintro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="View this shop's history"
+        android:textColor="@color/white"
+        app:backgroundTint="#0D47A1"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/shopintro_shopEmail"
+        app:layout_constraintStart_toStartOf="@+id/shopintro_shopEmail"
+        app:layout_constraintTop_toBottomOf="@+id/shopintro_shopEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
